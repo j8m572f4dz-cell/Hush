@@ -26,68 +26,46 @@
     <img src="IMG_0691.jpeg">
     <h3>Charcoal</h3>
     <p>$100</p>
-    <select>
+    <select class="size-select">
       <option>Size</option>
       <option>S</option>
       <option>M</option>
       <option>L</option>
       <option>XL</option>
     </select>
+    <button class="add-to-cart" data-name="Charcoal" data-price="100">Add to Cart</button>
   </div>
 
   <div class="product">
     <img src="IMG_0692.jpeg">
     <h3>Midnight Blue</h3>
     <p>$100</p>
-    <select>
+    <select class="size-select">
       <option>Size</option>
       <option>S</option>
       <option>M</option>
       <option>L</option>
       <option>XL</option>
     </select>
+    <button class="add-to-cart" data-name="Midnight Blue" data-price="100">Add to Cart</button>
   </div>
+  
+  </section>
 
-  <div class="product">
-    <img src="IMG_0693.jpeg">
-    <h3>Pitch Black</h3>
-    <p>$100</p>
-    <select>
-      <option>Size</option>
-      <option>S</option>
-      <option>M</option>
-      <option>L</option>
-      <option>XL</option>
-    </select>
-  </div>
-
-  <div class="product">
-    <img src="IMG_0694.jpeg">
-    <h3>Dusty Rose</h3>
-    <p>$100</p>
-    <select>
-      <option>Size</option>
-      <option>S</option>
-      <option>M</option>
-      <option>L</option>
-      <option>XL</option>
-    </select>
-  </div>
-
-  <div class="product">
-    <img src="IMG_0604.jpeg">
-    <h3>Heather Gray</h3>
-    <p>$100</p>
-    <select>
-      <option>Size</option>
-      <option>S</option>
-      <option>M</option>
-      <option>L</option>
-      <option>XL</option>
-    </select>
-  </div>
+<section class="cart-footer">
+  <div id="cart-display">Items in Cart: 0</div>
+  <button id="checkout-btn">Checkout</button>
 </section>
 
-<script src="script.js"></script>
+<div id="terms-modal" class="modal">
+  <div class="modal-content">
+    <h2>Terms & Conditions</h2>
+    <div class="terms-text">
+      <p>YOUR TERMS GO HERE. Edit this text in the HTML file.</p>
+    </div>
+    <button id="accept-terms">I Accept & Pay</button>
+    <button id="close-modal">Cancel</button>
+  </div>
+</div>
 </body>
 </html>
