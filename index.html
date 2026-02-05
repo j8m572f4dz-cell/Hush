@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>hush | Home</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
 </head>
 <body>
 
 <header>
-  <img src="IMG_1413.png" class="logo">
+  <img src="IMG_1413.png" class="logo" alt="hush logo">
   <nav>
     <a href="index.html">Home</a>
     <a href="safety.html">Safety</a>
@@ -27,11 +29,11 @@
     <h3>Charcoal</h3>
     <p>$100</p>
     <select class="size-select">
-      <option>Size</option>
-      <option>S</option>
-      <option>M</option>
-      <option>L</option>
-      <option>XL</option>
+      <option value="">Size</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
     </select>
     <button class="add-to-cart" data-name="Charcoal" data-price="100">Add to Cart</button>
   </div>
@@ -41,31 +43,76 @@
     <h3>Midnight Blue</h3>
     <p>$100</p>
     <select class="size-select">
-      <option>Size</option>
-      <option>S</option>
-      <option>M</option>
-      <option>L</option>
-      <option>XL</option>
+      <option value="">Size</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
     </select>
     <button class="add-to-cart" data-name="Midnight Blue" data-price="100">Add to Cart</button>
   </div>
-  
-  </section>
+
+  <div class="product">
+    <img src="IMG_0693.jpeg">
+    <h3>Pitch Black</h3>
+    <p>$100</p>
+    <select class="size-select">
+      <option value="">Size</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+    </select>
+    <button class="add-to-cart" data-name="Pitch Black" data-price="100">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="IMG_0694.jpeg">
+    <h3>Dusty Rose</h3>
+    <p>$100</p>
+    <select class="size-select">
+      <option value="">Size</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+    </select>
+    <button class="add-to-cart" data-name="Dusty Rose" data-price="100">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="IMG_0604.jpeg">
+    <h3>Heather Gray</h3>
+    <p>$100</p>
+    <select class="size-select">
+      <option value="">Size</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+    </select>
+    <button class="add-to-cart" data-name="Heather Gray" data-price="100">Add to Cart</button>
+  </div>
+</section>
 
 <section class="cart-footer">
-  <div id="cart-display">Items in Cart: 0</div>
+  <div id="cart-count">Items in Cart: 0</div>
   <button id="checkout-btn">Checkout</button>
 </section>
 
 <div id="terms-modal" class="modal">
   <div class="modal-content">
     <h2>Terms & Conditions</h2>
-    <div class="terms-text">
-      <p>YOUR TERMS GO HERE. Edit this text in the HTML file.</p>
+    <div class="terms-scroll-box">
+      <p><strong>Please review our terms:</strong></p>
+      <p>Insert your specific terms and conditions here. This typically includes shipping policies, return information, and privacy notices.</p>
     </div>
-    <button id="accept-terms">I Accept & Pay</button>
+    <p>By proceeding with the PayPal payment, you agree to the terms above.</p>
+    <div id="paypal-button-container"></div>
     <button id="close-modal">Cancel</button>
   </div>
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
